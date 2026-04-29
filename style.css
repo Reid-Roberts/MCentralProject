@@ -1,0 +1,115 @@
+/* --- MISSIONS CENTRAL CUSTOM STYLES --- */
+
+/* Override Bootstrap's primary blue (#0d6efd) with orange throughout. */
+:root {
+    --bs-primary:             #e8630a;
+    --bs-primary-rgb:         232, 99, 10;
+    --bs-link-color:          #e8630a;
+    --bs-link-color-rgb:      232, 99, 10;
+    --bs-link-hover-color:    #c45408;
+}
+
+/* Bootstrap 5 buttons scope their own local variables, so :root alone
+   doesn't reach them. These selectors target .btn-primary and
+   .btn-outline-primary directly. */
+.btn-primary {
+    --bs-btn-bg:                 #e8630a;
+    --bs-btn-border-color:       #e8630a;
+    --bs-btn-hover-bg:           #c45408;
+    --bs-btn-hover-border-color: #c45408;
+    --bs-btn-active-bg:          #a84807;
+    --bs-btn-active-border-color:#a84807;
+    --bs-btn-disabled-bg:        #e8630a;
+    --bs-btn-disabled-border-color: #e8630a;
+}
+
+.btn-outline-primary {
+    --bs-btn-color:              #e8630a;
+    --bs-btn-border-color:       #e8630a;
+    --bs-btn-hover-bg:           #e8630a;
+    --bs-btn-hover-border-color: #e8630a;
+    --bs-btn-active-bg:          #c45408;
+    --bs-btn-active-border-color:#c45408;
+}
+
+body {
+    /* Helvetica Neue first; standard system sans-serif stack as fallback */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #212529; /* Standard dark grey for readability */
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Fix for vanishing text in dropdowns/accordions/navbar */
+.dropdown-item, 
+.accordion-button,
+.nav-link,
+.card-title,
+.card-text,
+.accordion-body {
+    color: #212529 !important; /* Ensure dark text by default */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #e8630a !important; /* Orange text when expanded */
+    background-color: #f8f9fa;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2b3035 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e8630a !important;
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #e8630a !important;
+}
+
+/* Navigation branding */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Feature icon styling */
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Card hover effect */
+.card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Global utility */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.uppercase-tracking {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 0.75rem;
+}

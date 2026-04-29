@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Organizations | Missions Central</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-primary fw-semibold" href="index.html">
+                <span>Missions Central</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link fw-medium active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown">
+                            Organizations
+                        </a>
+                        <ul class="dropdown-menu border shadow-sm mt-2">
+                            <li><a class="dropdown-item py-2" href="international.html">International</a></li>
+                            <li><a class="dropdown-item py-2" href="domestic.html">Domestic</a></li>
+                            <li><a class="dropdown-item py-2" href="local.html">Auburn Local</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="prayer.html">Prayer</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="stats.html">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <h2 class="mb-4 fw-bold">Domestic Organizations</h2>
+            <p class="text-muted mb-5 lead">This is a non-comprehensive list of missions organizations inside of the United States.</p>
+            
+            <div class="row row-cols-1 row-cols-lg-3 mb-5">
+                <div class="col mb-3">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <img class="card-img-top" src="https://www.baptistpress.com/wp-content/uploads/2021/12/Noah-Baptizing.jpeg" alt="Picture of woman in church being baptized in water by a man" style="max-height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">NAMB</h5>
+                            <p class="card-text text-secondary">The North American Mission Board focuses on "Planting Churches Everywhere for Everyone" in the United States and Canada.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4 px-4">
+                            <a href="https://www.namb.net/" target="_blank" class="btn btn-outline-primary btn-sm px-3">Visit Website &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <img class="card-img-top" src="https://delivery-p56256-e778627.adobeaemcloud.com/adobe/assets/urn:aaid:aem:c1dca947-b5bb-42ef-b8a2-51a0dbacee0c/as/A%20Miraculous%20Week.jpg?width=1280&preferwebp=true" alt="Picture of 3 women talking outside about Jesus with Cru " style="max-height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">Cru</h5>
+                            <p class="card-text text-secondary">Campus Crusade for Christ's vision is: "Movements everywhere so that everyone knows someone who truly follows Jesus".</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4 px-4">
+                            <a href="https://www.cru.org/" target="_blank" class="btn btn-outline-primary btn-sm px-3">Visit Website &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <img class="card-img-top" src="https://intervarsity.org/sites/default/files/inline-images/andy%20chan%202.jpg" alt="Picture of group of students in library planning for InterVaristy organization meetings" style="max-height: 200px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary">InterVarsity</h5>
+                            <p class="card-text text-secondary">"InterVarsity is a campus community that helps students and faculty follow Jesus with their whole lives, for the rest of their lives."</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4 px-4">
+                            <a href="https://intervarsity.org/" target="_blank" class="btn btn-outline-primary btn-sm px-3">Visit Website &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class=" mb-4 fw-bold">Know an organization you'd like to see added?</h3>
+            <p class="text-muted mb-3">Feel free to let us know what organizations we should add to this info page to help students get involved and stay informed or ask us a question.</p>
+            
+            <!-- Suggestion Form : code refactored by Claude AI for clarity purposes -->
+            <form id="suggestionForm">
+              <div class="form-group mb-3">
+                <label for="organizationQuestion" class="form-label">Organization or Question:</label>
+                <textarea class="form-control" id="organizationQuestion" rows="4" placeholder="Tell us about an organization you'd like to see added or ask a question..."></textarea>
+                <small class="form-text text-muted">We'd love to hear your suggestions and questions!</small>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+            </form>
+
+            <script>
+              document.getElementById('suggestionForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const textarea = document.getElementById('organizationQuestion');
+                const submitBtn = document.getElementById('submitBtn');
+                
+                textarea.disabled = true;
+                submitBtn.classList.remove('btn-primary');
+                submitBtn.classList.add('btn-success');
+                submitBtn.textContent = 'Submitted';
+              });
+            </script>
+
+
+        </div>
+    </main>
+
+
+<!-- FOOTER -->
+    <footer class="py-3 bg-light border-top">
+        <div class="container text-center">
+            <p class="text-muted big fw-bold">Missions Central. Created by PK & RR.</p>
+            <div>
+                <a href="about.html" class="text-muted small text-decoration-none mx-2">About</a>
+                <a href="faq.html" class="text-muted small text-decoration-none mx-2">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
