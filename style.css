@@ -40,6 +40,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* Fix for vanishing text in dropdowns/accordions/navbar */
 .dropdown-item, 
 .accordion-button,
@@ -112,4 +113,8 @@ footer {
     letter-spacing: 0.1em;
     font-weight: 700;
     font-size: 0.75rem;
+}
+
+.darken-text{
+    color:black;
 }
