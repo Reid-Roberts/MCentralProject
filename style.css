@@ -13,7 +13,7 @@
    doesn't reach them. These selectors target .btn-primary and
    .btn-outline-primary directly. */
 .btn-primary {
-    --bs-btn-bg:                 #e8630a;
+    --bs-btn-bg:                 #d35b0c;
     --bs-btn-border-color:       #e8630a;
     --bs-btn-hover-bg:           #c45408;
     --bs-btn-hover-border-color: #c45408;
